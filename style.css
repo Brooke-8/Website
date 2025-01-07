@@ -25,12 +25,15 @@
 
 body {
     background-color: var(--background-colour);
+    position: absolute;
+    overflow: hidden;
 }
 #maincontainer{
-    margin: 10px;
-    padding: 20px;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
     overflow: hidden;
 
@@ -54,8 +57,13 @@ body {
 }
 #leftcontainer{
     margin-right: 100px;
+    max-width: 300px;
 }
 #rightcontainer{
+    max-width: 700px;
+    height: 100vh;
+    padding-right: 20px;
+    overflow-y: scroll;
     #pixelimagecontainer{
         display: flex;
         flex-wrap: wrap;
@@ -83,4 +91,13 @@ body {
         border-color: var(--background-glow);
         transition: all 0.1s ease-in;
     }
+}
+
+#rightcontainer::-webkit-scrollbar{
+    width: 5px;
+    height: 8px;
+    background-color: var(--subwhite);
+}
+#rightcontainer::-webkit-scrollbar-thumb{
+    background: var(--background-glow);
 }

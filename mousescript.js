@@ -1,6 +1,9 @@
 const maincontainer = document.getElementById('maincontainer');
 
 maincontainer.addEventListener('mousemove',(e)=>{
-    maincontainer.style.setProperty("--x", e.clientX);
-    maincontainer.style.setProperty("--y", e.clientY);
+    const x = e.clientX + window.scrollX;
+    const y = e.clientY + window.scrollY;
+
+    maincontainer.style.setProperty("--x", x );
+    maincontainer.style.setProperty("--y", y );
 })
