@@ -1,31 +1,86 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-:root{
-    /* Colours */
-    --background-colour: rgba(18, 56, 73,100);
-    --white: #F4EDED;
-    --subwhite:#b0cbcc;
+
+@property --background-colour{
+    syntax: '<color>';
+    inherits:false;
+    initial-value: rgba(18, 56, 73,1);
 }
+@property --background-glow{
+    syntax: '<color>';
+    inherits:false;
+    initial-value: rgba(8, 165, 126, 0.411);
+}
+@property --white{
+    syntax: '<color>';
+    inherits:false;
+    initial-value: rgba(244, 237, 237,1); 
+}
+@property --subwhite{
+    syntax: '<color>';
+    inherits:false;
+    initial-value: rgba(176, 203, 204,1); 
+}
+
 body {
     background-color: var(--background-colour);
 }
-.maincontainer{
-    margin-top: 20px;
+#maincontainer{
+    margin: 10px;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+
 }
-.leftcontainer{
+#maincontainer:hover::after{
+    opacity: 0.4;
+    transition: opacity 1s ease-in ;
+}
+#maincontainer::after{
+    content: '';
+    width: 800px;
+    height: 800px;
+    opacity: 0;
+    transition: opacity 1s ease-out ;
+    pointer-events: none;
+    position: absolute;
+    background: radial-gradient(circle, var(--background-glow),transparent 60%);
+    top: calc(var(--y,0)*1px - 400px);
+    left: calc(var(--x,0)*1px - 400px);
+    
+}
+#leftcontainer{
     margin-right: 100px;
 }
-.rightcontainer{
+#rightcontainer{
+    #pixelimagecontainer{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 5,5;
+        .pixelimage{
+            width: 200px;
+            padding: 10px
+        }
+
+    }
+    .listheader{
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
     .project{
-        margin-top: 30px; 
+        margin-bottom: 10px; 
         padding: 10px;
         border-radius: 10px;
+        border: 2px solid transparent;
+        transition: all 0.1s ease-out;
     }
     .project:hover{
         background-color: var(--background-colour);
         filter: brightness(1.2);
+        border-color: var(--background-glow);
+        transition: all 0.1s ease-in;
     }
 }
