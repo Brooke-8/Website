@@ -22,27 +22,36 @@
     inherits:false;
     initial-value: rgba(176, 203, 204,1); 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: var(--background-colour);
-    position: absolute;
-    overflow: hidden;
+    overflow-x: hidden;
+    margin: 0;
+    
 }
 #maincontainer{
+    display: flex;
+    overflow: visible;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+}
+
+#glowcontainer{
     margin: 30px;
     padding: 30px;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
+    overflow: clip;
     position: relative;
-    overflow: hidden;
-
 }
-#maincontainer:hover::after{
+#glowcontainer:hover::after{
     opacity: 0.4;
     transition: opacity 1s ease-in ;
 }
-#maincontainer::after{
+#glowcontainer::after{
     content: '';
     width: 800px;
     height: 800px;
@@ -56,14 +65,15 @@ body {
     
 }
 #leftcontainer{
+    position: sticky;
+    top: 0;
     margin-right: 100px;
     max-width: 300px;
+    align-self: flex-start;
 }
 #rightcontainer{
     max-width: 700px;
-    height: 100vh;
     padding-right: 20px;
-    overflow-y: scroll;
     #pixelimagecontainer{
         display: flex;
         flex-wrap: wrap;
@@ -93,11 +103,20 @@ body {
     }
 }
 
-#rightcontainer::-webkit-scrollbar{
+@media (max-width: 500px){
+    #maincontainer{
+        flex-wrap: wrap;
+    }
+    #leftcontainer{
+        position: static;
+    }
+}
+
+body::-webkit-scrollbar{
     width: 5px;
     height: 8px;
-    background-color: var(--subwhite);
+    background-color: var(--background-colour);
 }
-#rightcontainer::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb{
     background: var(--background-glow);
 }

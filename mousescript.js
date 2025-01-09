@@ -1,9 +1,9 @@
-const maincontainer = document.getElementById('maincontainer');
+const glowcontainer = document.getElementById('glowcontainer');
 
-maincontainer.addEventListener('mousemove',(e)=>{
+glowcontainer.addEventListener('mousemove',(e)=>{
     const x = e.clientX + window.scrollX;
     const y = e.clientY + window.scrollY;
 
-    maincontainer.style.setProperty("--x", x );
-    maincontainer.style.setProperty("--y", y );
+    glowcontainer.style.setProperty("--x", x );
+    glowcontainer.style.setProperty("--y", y );
 })
