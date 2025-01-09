@@ -28,3 +28,26 @@ p{
     margin: 0px;
     
 }
+a{
+    font-family: "K2D";
+    color:var(--subwhite);
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0px;
+    text-align: left; 
+    text-decoration: none;
+}
+
+a:focus,
+a:hover,
+a.active,
+a:active{
+    color:var(--white);
+}
+nav{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

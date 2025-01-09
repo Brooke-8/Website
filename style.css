@@ -34,9 +34,10 @@ body {
 }
 #maincontainer{
     display: flex;
-    overflow: visible;
+    overflow: clip;
     flex-direction: row;
-    position: relative;
+    position: sticky;
+    top: 30px;
     justify-content: center;
 }
 
@@ -44,7 +45,6 @@ body {
     margin: 30px;
     padding: 30px;
     border-radius: 10px;
-    overflow: clip;
     position: relative;
 }
 #glowcontainer:hover::after{
@@ -66,14 +66,15 @@ body {
 }
 #leftcontainer{
     position: sticky;
-    top: 0;
+    top: 60px;
     margin-right: 100px;
     max-width: 300px;
     align-self: flex-start;
 }
 #rightcontainer{
-    max-width: 700px;
+    max-width: 600px;
     padding-right: 20px;
+
     #pixelimagecontainer{
         display: flex;
         flex-wrap: wrap;
@@ -103,12 +104,18 @@ body {
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 800px){
     #maincontainer{
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
     #leftcontainer{
         position: static;
+    }
+    #glowcontainer::after{
+        top:-200px;
+        left:-200px;
+        opacity: 0.4;
     }
 }
 
