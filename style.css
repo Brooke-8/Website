@@ -78,10 +78,10 @@ body {
     #pixelimagecontainer{
         display: flex;
         flex-wrap: wrap;
-        flex: 5,5;
+        flex-shrink: 500px;
         .pixelimage{
             width: 200px;
-            padding: 10px
+            padding: 5px
         }
 
     }
