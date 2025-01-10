@@ -80,7 +80,7 @@ body {
         flex-wrap: wrap;
         flex-shrink: 500px;
         .pixelimage{
-            width: 200px;
+            width: 100px;
             padding: 5px
         }
 
@@ -104,7 +104,7 @@ body {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
     #maincontainer{
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -113,9 +113,10 @@ body {
         position: static;
     }
     #glowcontainer::after{
-        top:-200px;
-        left:-200px;
+        top: calc(var(--sy,0)*1px - 100px);
+        left:-400px;
         opacity: 0.4;
+
     }
 }
 
@@ -126,4 +127,11 @@ body::-webkit-scrollbar{
 }
 body::-webkit-scrollbar-thumb{
     background: var(--background-glow);
+}
+
+dialog{
+    border-radius: 10px;
+    background-color: var(--background-colour);
+    border-color:  var(--background-glow);
+    width: 90vh;
 }

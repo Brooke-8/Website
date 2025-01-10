@@ -24,30 +24,30 @@
                     Seeking to further my interest in machine learning, cybersecurity, and embedded systems through
                     hands-on industry experience.</p>
                 <h2 class="listheader" id="projects">Projects</h2>
-                <div class="project">
+                <div href="spectralizationdialog" class="project">
                     <h3 class="projecttitle">Spectralization</h3>
                     <p>Prototype rhythm game that takes audio directly from desktop. 
                         Has a visualizer that reacts to audio from given input device 
                         and audio data used for game logic. </p>
                 </div>
-                <div class="project">
+                <div href="workoutdialog" class="project">
                     <h3 class="projecttitle">Swimming Workout Generator</h3>
                     <p>Designed and created a Java application to automatically generate customized or
                         random swimming workout plans. Utilized OpenPDF to produce professionally 
                         formatted and easily printable workout PDFs. </p>
                 </div>
-                <div class="project">
+                <div href="eventmanagementdialog" class="project">
                     <h3 class="projecttitle">Event Management App</h3>
                     <p>Android Mobile app that allows creation and management of events.</p>
                 </div>
                 <h2 class="listheader" id="pixelart">Pixel Art</h2>
                 <div id="pixelimagecontainer">
-                    <img class="pixelimage" src="Images/monumentBIG.png">
-                    <img class="pixelimage" src="Images/InfinityFlippedOnItsSide2.png">
-                    <img class="pixelimage" src="Images/Magic Mirror.gif">
-                    <img class="pixelimage" src="Images/Furina.png">
-                    <img class="pixelimage" src="Images/WhalePotionBIG.png">
-                    <img class="pixelimage" src="Images/CANShieldBIG.png">
+                    <img class="pixelimage" src="Images\monumentBIG.png">
+                    <img class="pixelimage" src="Images\InfinityFlippedOnItsSide2.png">
+                    <img class="pixelimage" src="Images\Magic Mirror.gif">
+                    <img class="pixelimage" src="Images\Furina.png">
+                    <img class="pixelimage" src="Images\WhalePotionBIG.png">
+                    <img class="pixelimage" src="Images\CANShieldBIG.png">
                     <img class="pixelimage" src="Images\Empty.png">
                     <img class="pixelimage" src="Images\Fall.gif">
                     <img class="pixelimage" src="Images\FreeBIG2.png">
@@ -62,6 +62,25 @@
             </div>
         </div>
     </div>
-    <script src="scripts.js"></script>
+    <dialog id="projectdialog">
+        <div id="spectralizationdialog" class="projectdialogcontent">
+            <h2>Spectralization</h2>
+            <p>Spectralization is a small game I created in Unity to test the 
+                concept of controlling in game elements directly with audio from the desktop
+                
+            </p>
+        </div>
+        <div id="workoutdialog" class="projectdialogcontent">
+            <h2>Swimming Workout Generator</h2>
+            <p>workout disc</p>
+        </div>
+        <div id="eventmanagementdialog" class="projectdialogcontent">
+            <h2>Event Management App</h2>
+            <p>eventmanagementapp</p>
+        </div>
+    </dialog>
+    <script src="glow.js"></script>
+    <script src="contents.js"></script>
+    <script src="dialog.js"></script>
 </body>
 </html>

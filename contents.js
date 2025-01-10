@@ -1,13 +1,4 @@
-const glowcontainer = document.getElementById('glowcontainer');
-
-glowcontainer.addEventListener('mousemove',(e)=>{
-    const x = e.clientX + window.scrollX;
-    const y = e.clientY + window.scrollY;
-
-    glowcontainer.style.setProperty("--x", x );
-    glowcontainer.style.setProperty("--y", y );
-})
-
+/* Highlighting table of contents on scroll*/
 window.addEventListener('scroll',function(){
     const links = document.querySelectorAll('nav a');
     const sections = document.querySelectorAll('h2.listheader');
@@ -29,3 +20,4 @@ window.addEventListener('scroll',function(){
         }
     })
 })
+
