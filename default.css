@@ -1,14 +1,14 @@
 h1 {
     color:var(--white);
     font-family: "Righteous";
-    font-size: 3em;
+    font-size: 3rem;
     text-align: left;
     margin: 0px
 }
 h2{
     font-family: "K2D";
     color:var(--white);
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 100;
     margin: 0px;
     text-align: left;
@@ -16,7 +16,7 @@ h2{
 h3{
     font-family: "K2D";
     color:var(--white);
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 700;
     margin: 0px;
     text-align: left; 
@@ -24,14 +24,14 @@ h3{
 p{
     color:var(--subwhite);
     font-family: "k2d";
-    font-size: 1em;
+    font-size: 1rem;
     margin: 0px;
     
 }
 a{
     font-family: "K2D";
     color:var(--subwhite);
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 700;
     margin: 0px;
     text-align: left; 
@@ -57,6 +57,6 @@ svg{
 footer{
     font-family: "K2D";
     color:var(--subwhite);
-    font-size: 0.8em;
+    font-size: 0.8rem;
     margin-top: 30px;
 }
