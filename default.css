@@ -54,3 +54,9 @@ nav{
 svg{
     fill: var(--white);
 }
+footer{
+    font-family: "K2D";
+    color:var(--subwhite);
+    font-size: 0.8em;
+    margin-top: 30px;
+}

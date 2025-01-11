@@ -39,6 +39,7 @@ body {
     position: sticky;
     top: 30px;
     justify-content: center;
+    
 }
 
 #glowcontainer{
@@ -68,11 +69,19 @@ body {
     position: sticky;
     top: 60px;
     margin-right: 100px;
-    max-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
     align-self: flex-start;
+
+    #contacticons{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
 }
 #rightcontainer{
-    max-width: 600px;
+    max-width: 700px;
     padding-right: 20px;
 
     #pixelimagecontainer{
@@ -118,10 +127,4 @@ dialog{
     background-color: var(--background-colour);
     border-color:  var(--background-glow);
     width: 90vh;
-}
-
-#contacticons{
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
 }
