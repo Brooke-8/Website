@@ -1,0 +1,21 @@
+@media (max-width: 1000px){
+    #maincontainer{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    #leftcontainer{
+        position: static;
+    }
+    #rightcontainer{
+        max-width: 1000px;
+    }
+}
+
+@media (any-pointer: coarse){
+    #glowcontainer::after{
+        top: calc(var(--sy,0)*1px - 100px);
+        left:-400px;
+        opacity: 0.4;
+
+    }
+}

@@ -104,22 +104,6 @@ body {
     }
 }
 
-@media (max-width: 1000px){
-    #maincontainer{
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    #leftcontainer{
-        position: static;
-    }
-    #glowcontainer::after{
-        top: calc(var(--sy,0)*1px - 100px);
-        left:-400px;
-        opacity: 0.4;
-
-    }
-}
-
 body::-webkit-scrollbar{
     width: 5px;
     height: 8px;
