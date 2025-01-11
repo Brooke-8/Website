@@ -11,7 +11,7 @@
     }
 }
 
-@media (any-pointer: coarse){
+@media (pointer: coarse){
     #glowcontainer::after{
         top: calc(var(--sy,0)*1px - 100px);
         left:-400px;
