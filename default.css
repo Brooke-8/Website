@@ -51,3 +51,6 @@ nav{
     flex-direction: column;
     gap: 10px;
 }
+svg{
+    fill: var(--white);
+}

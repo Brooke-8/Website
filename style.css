@@ -135,3 +135,9 @@ dialog{
     border-color:  var(--background-glow);
     width: 90vh;
 }
+
+#contacticons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
