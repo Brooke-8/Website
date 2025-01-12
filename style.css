@@ -5,22 +5,32 @@
 @property --background-colour{
     syntax: '<color>';
     inherits:false;
-    initial-value: rgba(18, 56, 73,1);
+    initial-value: #02122b;
 }
-@property --background-glow{
+@property --glow{
     syntax: '<color>';
     inherits:false;
-    initial-value: rgba(8, 165, 126, 0.411);
+    initial-value: rgba(177, 75, 197, 0.521);
+}
+@property --glow-middle{
+    syntax: '<color>';
+    inherits:false;
+    initial-value: rgba(69, 26, 226, 0.212);
+}
+@property --accent{
+    syntax: '<color>';
+    inherits:false;
+    initial-value: rgba(40, 219, 181, 0.575);
 }
 @property --white{
     syntax: '<color>';
     inherits:false;
-    initial-value: rgba(244, 237, 237,1); 
+    initial-value: #F3FCF0; 
 }
 @property --subwhite{
     syntax: '<color>';
     inherits:false;
-    initial-value: rgba(176, 203, 204,1); 
+    initial-value: #90a5d3; 
 }
 html{
     scroll-behavior: smooth;
@@ -32,38 +42,52 @@ body {
     margin: 0;
     
 }
-#maincontainer{
-    display: flex;
-    overflow: clip;
-    flex-direction: row;
-    position: sticky;
-    top: 30px;
-    justify-content: center;
-    
-}
-
 #glowcontainer{
     margin: 30px;
     padding: 30px;
     border-radius: 10px;
     position: relative;
+    
 }
 #glowcontainer:hover::after{
-    opacity: 0.4;
-    transition: opacity 1s ease-in ;
+    opacity: 0.3;
+    transition: opacity 0.7s ease-in ;
 }
 #glowcontainer::after{
     content: '';
-    width: 800px;
-    height: 800px;
+    width: 1000px;
+    height: 1000px;
     opacity: 0;
-    transition: opacity 1s ease-out ;
+    transition: opacity 0.7s ease-out ;
     pointer-events: none;
     position: absolute;
-    background: radial-gradient(circle, var(--background-glow),transparent 60%);
-    top: calc(var(--y,0)*1px - 400px);
-    left: calc(var(--x,0)*1px - 400px);
+    z-index: -1;
+    background: radial-gradient(circle,var(--glow)0%,var(--glow-middle) 40%, transparent 70%);
+    top: calc(var(--y,0)*1px - 525px);
+    left: calc(var(--x,0)*1px - 525px);
     
+}
+
+#maincontainer{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 30px;
+    justify-content: center;  
+}
+
+/* film grain*/
+#maincontainer::before{
+    content: '';
+    position: fixed;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    filter: url(#grainy);
+    pointer-events: none;
 }
 #leftcontainer{
     position: sticky;
@@ -73,7 +97,6 @@ body {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-
     #contacticons{
         display: flex;
         gap: 10px;
@@ -84,16 +107,7 @@ body {
     max-width: 700px;
     padding-right: 20px;
 
-    #pixelimagecontainer{
-        display: flex;
-        flex-wrap: wrap;
-        flex-shrink: 500px;
-        .pixelimage{
-            width: 100px;
-            padding: 5px
-        }
-
-    }
+    
     .listheader{
         margin-top: 20px;
         margin-bottom: 5px;
@@ -108,10 +122,30 @@ body {
     .project:hover{
         background-color: var(--background-colour);
         filter: brightness(1.2);
-        border-color: var(--background-glow);
+        border-color: var(--accent);
         transition: all 0.1s ease-in;
+        box-shadow: 0 0 20px var(--accent);
     }
-}
+    #pixelimagecontainer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 500px;
+        .pixelimage{
+            width: 120px;
+            padding: 4px;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            filter: brightness(0.9);
+        }
+        .pixelimage:hover{
+            border: 2px solid var(--accent);
+            border-radius: 10px;
+            box-shadow: 0 0 20px var(--accent);
+            filter: brightness(1.1);
+        }
+
+    }
+}     
 
 body::-webkit-scrollbar{
     width: 5px;
@@ -119,12 +153,12 @@ body::-webkit-scrollbar{
     background-color: var(--background-colour);
 }
 body::-webkit-scrollbar-thumb{
-    background: var(--background-glow);
+    background: var(--accent);
 }
 
 dialog{
     border-radius: 10px;
     background-color: var(--background-colour);
-    border-color:  var(--background-glow);
+    border-color:  var(--accent);
     width: 90vh;
 }
