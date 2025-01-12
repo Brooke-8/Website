@@ -136,12 +136,14 @@ body {
             border: 2px solid transparent;
             border-radius: 10px;
             filter: brightness(0.9);
+            transition: all 0.1s ease-out;
         }
         .pixelimage:hover{
             border: 2px solid var(--accent);
             border-radius: 10px;
             box-shadow: 0 0 20px var(--accent);
             filter: brightness(1.1);
+            transition: all 0.1s ease-in;
         }
 
     }
