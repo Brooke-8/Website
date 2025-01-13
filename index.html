@@ -88,7 +88,7 @@
                     <p>Calendar template made for Google sheets.</p>
                 </div>
                 <h2 class="listheader" id="pixelart">Pixel Art</h2>
-                <div id="pixelimagecontainer">
+                <div class="imagecontainer" id="pixelimagecontainer">
                     <img class="pixelimage openableimage" src="Images\monumentBIG.png">
                     <img class="pixelimage openableimage" src="Images\InfinityFlippedOnItsSide2.png">
                     <img class="pixelimage openableimage" src="Images\Magic Mirror.gif">
@@ -118,9 +118,20 @@
         <div id="spectralizationdialog" class="projectdialogcontent">
             <h2>Spectralization</h2>
             <p>Spectralization is a small game I created in Unity to test the 
-                concept of controlling in game elements directly with audio from the desktop
+                concept of controlling in game elements directly with audio from the desktop. It works by retrieving audio from a microphone input using
+                NAudio libraries, then taking the spectrum data and using it to perform mathematical operations on the game elements. 
+                <br><br>
+                The goal of the game is to time your inputs to when the main visualizer spectrum is at its highest point. 
+                There are 4 regions on the spectrum, each assigned to a key on the keyboard. When you press a key that region will be 
+                highlighted and a score will be calculated based on how much of that regions spectrum was active during the press, this is then added to the final score.
+                <br><br>
+                
             </p>
-            <img class="openableimage" src="Images\spectra.gif">
+            <div class="imagecontainer">
+                <img class="openableimage" src="Images\SpectralizationHome.png">
+                <img class="openableimage" src="Images\spectra.gif">
+            </div>
+            
         </div>
         <div id="workoutdialog" class="projectdialogcontent">
             <h2>Swimming Workout Generator</h2>

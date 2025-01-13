@@ -88,12 +88,16 @@ dialog{
     border-radius: 10px;
     border: 2px solid var(--accent);
     background-color: var(--background-colour);
-    width: 75vw;
+    max-width: 75vw;
+    max-height: 75vh;
     outline: none;
     box-shadow: 0 0 50px var(--accent);
+    overflow: clip;
     
 }
 dialog::backdrop{
     background-color: var(--background-colour);
     opacity: 0.75;
 }
+
+
