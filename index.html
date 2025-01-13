@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="mobilestyle.css">
+    <!--Film Grain Texture-->
     <svg display="none">
         <filter id="grainy">
             <feTurbulence
@@ -88,22 +89,22 @@
                 </div>
                 <h2 class="listheader" id="pixelart">Pixel Art</h2>
                 <div id="pixelimagecontainer">
-                    <img class="pixelimage" src="Images\monumentBIG.png">
-                    <img class="pixelimage" src="Images\InfinityFlippedOnItsSide2.png">
-                    <img class="pixelimage" src="Images\Magic Mirror.gif">
-                    <img class="pixelimage" src="Images\Furina.png">
-                    <img class="pixelimage" src="Images\WhalePotionBIG.png">
-                    <img class="pixelimage" src="Images\CANShieldBIG.png">
-                    <img class="pixelimage" src="Images\Empty.png">
-                    <img class="pixelimage" src="Images\Fall.gif">
-                    <img class="pixelimage" src="Images\FreeBIG2.png">
-                    <img class="pixelimage" src="Images\FrogBIG.png">
-                    <img class="pixelimage" src="Images\ManandtheEcho.png">
-                    <img class="pixelimage" src="Images\mushroomvillageBIG.png">
-                    <img class="pixelimage" src="Images\OceanTower.png">
-                    <img class="pixelimage" src="Images\OnCloudsBIG.png">
-                    <img class="pixelimage" src="Images\RedHouseBIG.png">
-                    <img class="pixelimage" src="Images\Zuko.png">
+                    <img class="pixelimage openableimage" src="Images\monumentBIG.png">
+                    <img class="pixelimage openableimage" src="Images\InfinityFlippedOnItsSide2.png">
+                    <img class="pixelimage openableimage" src="Images\Magic Mirror.gif">
+                    <img class="pixelimage openableimage" src="Images\Furina.png">
+                    <img class="pixelimage openableimage" src="Images\WhalePotionBIG.png">
+                    <img class="pixelimage openableimage" src="Images\CANShieldBIG.png">
+                    <img class="pixelimage openableimage" src="Images\Empty.png">
+                    <img class="pixelimage openableimage" src="Images\Fall.gif">
+                    <img class="pixelimage openableimage" src="Images\FreeBIG2.png">
+                    <img class="pixelimage openableimage" src="Images\FrogBIG.png">
+                    <img class="pixelimage openableimage" src="Images\ManandtheEcho.png">
+                    <img class="pixelimage openableimage" src="Images\mushroomvillageBIG.png">
+                    <img class="pixelimage openableimage" src="Images\OceanTower.png">
+                    <img class="pixelimage openableimage" src="Images\OnCloudsBIG.png">
+                    <img class="pixelimage openableimage" src="Images\RedHouseBIG.png">
+                    <img class="pixelimage openableimage" src="Images\Zuko.png">
                 </div>
                 <footer>This website was coded from entirely scratch with <b>HTML</b>, <b>CSS</b>, and <b>Javascript</b> in <b>Visual Studio Code</b>.
                     <br>
@@ -112,13 +113,14 @@
             </div>
         </div>
     </div>
+    <!--Modals that open when clicking on each of the projects, order must correspond to project order-->
     <dialog id="projectdialog">
         <div id="spectralizationdialog" class="projectdialogcontent">
             <h2>Spectralization</h2>
             <p>Spectralization is a small game I created in Unity to test the 
                 concept of controlling in game elements directly with audio from the desktop
             </p>
-            <img src="Images\spectra.gif">
+            <img class="openableimage" src="Images\spectra.gif">
         </div>
         <div id="workoutdialog" class="projectdialogcontent">
             <h2>Swimming Workout Generator</h2>
@@ -129,6 +131,11 @@
             <p>eventmanagementapp</p>
         </div>
     </dialog>
+    <!--Basic Template for opening images-->
+    <dialog id="photodialog">
+        <img id="photodialogimage">
+    </dialog>
+    <!--Scripts-->
     <script src="glow.js"></script>
     <script src="contents.js"></script>
     <script src="dialog.js"></script>

@@ -1,3 +1,21 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--background-colour);
+    overflow-x: hidden;
+    margin: 0;
+    
+}
+body::-webkit-scrollbar{
+    width: 5px;
+    height: 8px;
+    background-color: var(--background-colour);
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--accent);
+}
+
 h1 {
     color:var(--white);
     font-family: "Righteous";
@@ -65,4 +83,17 @@ footer{
 }
 img{
     max-width: 100%;
+}
+dialog{
+    border-radius: 10px;
+    border: 2px solid var(--accent);
+    background-color: var(--background-colour);
+    width: 75vw;
+    outline: none;
+    box-shadow: 0 0 50px var(--accent);
+    
+}
+dialog::backdrop{
+    background-color: var(--background-colour);
+    opacity: 0.75;
 }

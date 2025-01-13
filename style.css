@@ -32,16 +32,7 @@
     inherits:false;
     initial-value: #90a5d3; 
 }
-html{
-    scroll-behavior: smooth;
-}
 
-body {
-    background-color: var(--background-colour);
-    overflow-x: hidden;
-    margin: 0;
-    
-}
 #glowcontainer{
     margin: 30px;
     padding: 30px;
@@ -149,18 +140,15 @@ body {
     }
 }     
 
-body::-webkit-scrollbar{
-    width: 5px;
-    height: 8px;
-    background-color: var(--background-colour);
+#photodialog{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    #photodialogimage{
+        max-height: 75vh;
+        border-radius: 5px;
+    }
 }
-body::-webkit-scrollbar-thumb{
-    background: var(--accent);
-}
-
-dialog{
-    border-radius: 10px;
-    background-color: var(--background-colour);
-    border-color:  var(--accent);
-    width: 85vw;
+#photodialog[open]{
+    display: flex;
 }
