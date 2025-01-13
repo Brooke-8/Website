@@ -63,3 +63,6 @@ footer{
     font-size: 0.8rem;
     margin-top: 30px;
 }
+img{
+    max-width: 100%;
+}

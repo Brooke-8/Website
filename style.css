@@ -162,5 +162,5 @@ dialog{
     border-radius: 10px;
     background-color: var(--background-colour);
     border-color:  var(--accent);
-    width: 90vh;
+    width: 85vw;
 }
