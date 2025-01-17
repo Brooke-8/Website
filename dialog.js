@@ -1,6 +1,6 @@
 /* Opening Dialog */
 const dialog = document.getElementById("projectdialog");
-const projects = document.querySelectorAll("div.project");
+const projects = document.querySelectorAll("project-element");
 const projectcontents = document.getElementsByClassName("projectdialogcontent");
 
 for (let i = 0; i < projects.length; i++){

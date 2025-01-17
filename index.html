@@ -67,26 +67,30 @@
                     On this website, you can find a collection of all my projects, as well as some hobbies I'm proud of, such as my pixel art &lt;3  
                 </p>
                 <h2 class="listheader" id="projects">Projects</h2>
-                <div href="spectralizationdialog" class="project">
-                    <h3 class="projecttitle">Spectralization</h3>
-                    <p>Prototype rhythm game that takes audio directly from desktop. 
-                        Has a visualizer that reacts to audio from given input device 
-                        and audio data used for game logic. </p>
-                </div>
-                <div href="workoutdialog" class="project">
-                    <h3 class="projecttitle">Swimming Workout Generator</h3>
-                    <p>Designed and created a Java application to automatically generate customized or
-                        random swimming workout plans. Utilized OpenPDF to produce professionally 
-                        formatted and easily printable workout PDFs. </p>
-                </div>
-                <div href="eventmanagementdialog" class="project">
-                    <h3 class="projecttitle">Event Management App</h3>
-                    <p>Android Mobile app that allows creation and management of events.</p>
-                </div>
-                <div href="" class="project">
-                    <h3 class="projecttitle">Spreadsheet Calendar</h3>
-                    <p>Calendar template made for Google sheets.</p>
-                </div>
+                <project-element 
+                    title="Spectralization" 
+                    description="Prototype rhythm game that takes audio directly from desktop. 
+                    Has a visualizer that reacts to audio from given input device 
+                    and audio data used for game logic. " 
+                    skills="C# Unity NAudio">
+                </project-element>
+                <project-element
+                    title="Swimming Workout Generator"
+                    description="Designed and created a Java application to automatically generate customized or
+                    random swimming workout plans. Utilized OpenPDF to produce professionally 
+                    formatted and easily printable workout PDFs."
+                    skills="Java OpenPDF">
+                </project-element>
+                <project-element
+                    title="Event Management App"
+                    description="Android Mobile app that allows creation and management of events."
+                    skills="Java XML Firestore CircleCI JUnit Espresso AndroidStudio">
+                </project-element>
+                <project-element
+                    title="Spreadsheet Calendar"
+                    description="Calendar template made for Google sheets."
+                    skills="JavaScript GoogleSheets GoogleAppsScript">
+                </project-element>
                 <h2 class="listheader" id="pixelart">Pixel Art</h2>
                 <div class="imagecontainer" id="pixelimagecontainer">
                     <img class="pixelimage openableimage" src="Images\monumentBIG.png">
@@ -207,7 +211,7 @@
                 program that was as easy to use as a physical whiteboard, but had all the benefits of a digital calendar. This is where spreadsheets come in.
                 Google sheets was an easy way for me to quickly make a robust calendar that I could use and edit from any device, and could add and manage events
                 simply by typing them into a cell.
-                 
+
             </p>
         </div>
     </dialog>
@@ -220,5 +224,6 @@
     <script src="contents.js"></script>
     <script src="dialog.js"></script>
     <script src="date.js"></script>
+    <script src="project.js" defer></script>
 </body>
 </html>
