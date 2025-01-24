@@ -7,17 +7,12 @@ document.addEventListener('DOMContentLoaded',()=>{
             super();
             const title = this.getAttribute("title") || "Default Title";
             const description = this.getAttribute("description") || "Default Description";
-            const skills = this.getAttribute("skills") || "";
-            const skillsArray = skills.split(',');
-            let skillsHTML = '';
-            skillsArray.forEach(skill =>{
-                skillsHTML += `<p class="skill">${skill}</p>`;
-            })
+            const skills = this.getAttribute("skills") ||"";
             this.innerHTML = `
                 <div class="project">
                     <h3 class="projecttitle">${title}</h3>
                     <p>${description}</p>
-                    <skills-element skills=${skillsArray}></skills-element>
+                    <skills-element skills=${skills}></skills-element>
                 </div>
             `;
         }

@@ -24,6 +24,7 @@ for (let i = 0; i < images.length; i++){
 window.onclick = function(event){
     if (event.target == dialog){
         dialog.close();
+        page.src = "";
     }   
     if (event.target == photoDialog){
         photoDialog.close();
