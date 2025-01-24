@@ -61,7 +61,8 @@
                 <project-element
                     title="EAMS (Event Attendance Management System)"
                     description="Android Mobile app that allows creation and management of events."
-                    skills="Java,XML,Firestore,CircleCI,JUnit,Espresso,Android Studio">
+                    skills="Java,XML,Firestore,CircleCI,JUnit,Espresso,Android Studio"
+                    url="pages/eamsdialog.html">
                 </project-element>
                 <project-element
                     title="8-Bit Digital Computer"
@@ -74,18 +75,21 @@
                     description="Prototype rhythm game that takes audio directly from desktop. 
                     Has a visualizer that reacts to audio from given input device 
                     and audio data used for game logic. " 
-                    skills="C#,Unity,NAudio">
+                    skills="C#,Unity,NAudio"
+                    url="pages\spectralizationdialog.html">
                 </project-element>
                 <project-element
                     title="Swimming Workout Generator"
                     description="Application that automatically generates workouts for competitive swimmers. Created in Java and 
                     used the OpenPDF library to compile and print the workouts to PDFs."
-                    skills="Java,OpenPDF">
+                    skills="Java,OpenPDF"
+                    url="pages/workoutdialog.html">
                 </project-element>
                 <project-element
                     title="Spreadsheet Calendar"
                     description="Calendar template made for Google sheets."
-                    skills="JavaScript,Google Sheets,Google Apps Script">
+                    skills="JavaScript,Google Sheets,Google Apps Script"
+                    url="pages/spreadsheetcalendardialog.html">
                 </project-element>
                 <h2 class="listheader" id="pixelart">Pixel Art</h2>
                 <div class="imagecontainer" id="pixelimagecontainer">
@@ -114,17 +118,17 @@
         </div>
     </div>
     <dialog id="projectdialog">
-        <iframe src="pages\spectralizationdialog.html"></iframe>
+        <iframe id="projectdialogpage"></iframe>
     </dialog>
     <!--Basic Template for opening images-->
     <dialog id="photodialog">
         <img id="photodialogimage">
     </dialog>
     <!--Scripts-->
+    <script src="scripts/elements.js" defer></script>
     <script src="scripts/glow.js"></script>
     <script src="scripts/contents.js"></script>
-    <!--<script src="scripts/dialog.js"></script>-->
+    <script src="scripts/dialog.js"></script>
     <script src="scripts/date.js"></script>
-    <script src="scripts/elements.js" defer></script>
 </body>
 </html>

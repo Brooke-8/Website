@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WorkoutBuilder</title>
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/default.css">
+        <link rel="stylesheet" href="../styles/mobilestyle.css">
+    </head>
+    <body>
+        <div id="workoutdialog" class="projectdialogcontent">
+            <h2>Swimming Workout Generator</h2>
+            <a href="https://github.com/Brooke-8/SwimmingWorkoutGenerator" target="_blank" rel="noopener noreferrer" aria-label="Github Profile">
+                <svg width="40"height="40"><use href="pages/sprites.svg#githubsvg"></use></svg></a>
+            </div>
+            <p>I was on a competeitive swim team for a large portion of my life, so when I went university I wanted a way
+                for me to continue swimming with proper practices. I came up with the idea of making a little program that could
+                generate practices for me automatically. The generator is written in Java, and uses a nice little library called 
+                <a href="https://github.com/LibrePDF/OpenPDF" target="_blank" rel="noopener noreferrer">OpenPDF</a> to format the output directly to a pdf.
+                <br><br>
+                I designed the code to be loosely coupled and highly modular. A workout consists of an ordered collection of sets
+                that each consist of an ordered collection of set components. The set class is an abtrasct class that can be extended
+                to create types of sets. I have created a few set classes that I use, but you want to implement a new class you can! 
+                <br><br>
+                I am currently still actively adding new features so I don't have a full build of the program yet, but if you want to use it
+                simply download the source code, change the Settings.java file as you wish, and then build and run the DocumentCreator.java file!
+        
+            </p>
+        </div>
+    </body>
+</html>

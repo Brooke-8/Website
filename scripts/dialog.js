@@ -1,17 +1,11 @@
 /* Opening Dialog */
 const dialog = document.getElementById("projectdialog");
+const page = document.getElementById("projectdialogpage");
 const projects = document.querySelectorAll("project-element");
-const projectcontents = document.getElementsByClassName("projectdialogcontent");
 
 for (let i = 0; i < projects.length; i++){
     projects.item(i).onclick = function(){
-        for (let j = 0; j < projectcontents.length; j++){
-            if (j===i){
-                projectcontents.item(j).style.display = "block"
-            } else {
-                projectcontents.item(j).style.display = "none";
-            }
-        }
+        page.src = projects.item(i).url;
         dialog.showModal();
     };
 }

@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded',()=>{
     class Project extends HTMLElement{
+        connectedCallback(){
+            this.url = this.getAttribute("url") || "";
+        }
         constructor(){
             super();
             const title = this.getAttribute("title") || "Default Title";
