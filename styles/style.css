@@ -186,6 +186,13 @@
 
 .projectdialogcontent{
     overflow-y: auto;
+    .projectdialogtitlecontainer{
+        display: flex;
+        gap: 20px;
+    }
+    .projecttext{
+        padding-top: 15px;
+    }
     
 }
 .projectdialogcontent::-webkit-scrollbar{
