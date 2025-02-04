@@ -1,0 +1,45 @@
+img{
+    max-width: 100%;
+}
+.imagecontainer{
+    display: flex;
+    flex-wrap: wrap;
+}  
+.imagecontainer img{
+    flex: 1 1 7vmax;
+    max-width: 100%;
+    min-width: 7vmax;
+}
+.dialogimagecontainer{
+    gap: 10px;
+    padding: 10px;
+}
+#pixelimagecontainer img{
+    max-width: clamp(25%,25%,33%);
+}
+.openableimage{
+    padding: 4px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    filter: brightness(0.9);
+    transition: all 0.1s ease-out;
+}
+.openableimage:hover{
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--accent);
+    filter: brightness(1.1);
+    transition: all 0.1s ease-in;
+}
+#photodialog{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    #photodialogimage{
+        max-height: 75vh;
+        border-radius: 5px;
+    }
+}
+#photodialog[open]{
+    display: flex;
+}
