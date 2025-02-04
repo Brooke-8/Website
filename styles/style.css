@@ -33,6 +33,7 @@
     initial-value: #90a5d3; 
 }
 
+/*? Glow Container*/
 #glowcontainer{
     margin: 30px;
     padding: 30px;
@@ -97,13 +98,11 @@
 }
 #rightcontainer{
     max-width: 700px;
-    padding-right: 20px;
-    
     .listheader{
         margin-top: 20px;
         margin-bottom: 5px;
     }
-    .project{
+    .project{ 
         margin-bottom: 10px; 
         padding: 10px;
         border-radius: 10px;
@@ -117,21 +116,6 @@
         transition: all 0.1s ease-in;
         box-shadow: 0 0 20px var(--accent);
     }
-    .pixelimage{
-        padding: 4px;
-        border: 2px solid transparent;
-        border-radius: 10px;
-        filter: brightness(0.9);
-        transition: all 0.1s ease-out;
-    }
-    .pixelimage:hover{
-        border: 2px solid var(--accent);
-        border-radius: 10px;
-        box-shadow: 0 0 20px var(--accent);
-        filter: brightness(1.1);
-        transition: all 0.1s ease-in;
-    }
-
 } 
 .skillcontainer{
     margin-top: 10px;
@@ -154,34 +138,14 @@
         box-shadow: 0 0 20px var(--glow-middle);
     }
 }
-.imagecontainer{
-    display: flex;
-    flex-wrap: wrap;
-}  
-.imagecontainer img{
-    flex: 1 1 7vmax;
-    max-width: 100%;
-    min-width: 7vmax;
-}
-#pixelimagecontainer img{
-    max-width: clamp(25%,25%,33%);
-}
 
-#photodialog{
-    width: fit-content;
-    height: fit-content;
-    padding: 5px;
-    #photodialogimage{
-        max-height: 75vh;
-        border-radius: 5px;
-    }
-}
-#photodialog[open]{
-    display: flex;
-}
+
+
+/** Dialog  */
 #projectdialog{
     width: fit-content;
     height: fit-content;
+    padding: 0;
 }
 
 .projectdialogcontent{
@@ -194,12 +158,4 @@
         padding-top: 15px;
     }
     
-}
-.projectdialogcontent::-webkit-scrollbar{
-    width: 5px;
-    height: 8px;
-    background-color: var(--background-colour);
-}
-.projectdialogcontent::-webkit-scrollbar-thumb{
-    background: var(--accent);
 }

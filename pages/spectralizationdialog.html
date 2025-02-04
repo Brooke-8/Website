@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,28 +6,38 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/default.css">
     <link rel="stylesheet" href="../styles/mobilestyle.css">
+    <link rel="stylesheet" href="../styles/images.css">
 </head>
-<body>
-    <div id="spectralizationdialog" class="projectdialogcontent">
-        <h2>Spectralization</h2>
-        <skills-element skills='C#,Unity,NAudio'></skills-element>
-        <a href="https://github.com/Brooke-8/Spectralization" target="_blank" rel="noopener noreferrer" aria-label="Github Profile">
-            <svg width="40"height="40"><use href="../images/sprites.svg#githubsvg"></use></svg>
-        </a>
-        <p>Spectralization is a small game I created in Unity to test the 
-            concept of controlling in game elements directly with audio from the desktop. It works by retrieving audio from a microphone input using
-            NAudio libraries, then taking the spectrum data and using it to perform mathematical operations on the game elements. 
-            <br><br>
-            The goal of the game is to time your inputs to when the main visualizer spectrum is at its highest point. 
-            There are 4 regions on the spectrum, each assigned to a key on the keyboard. When you press a key that region will be 
-            highlighted and a score will be calculated based on how much of that regions spectrum was active during the press, this is then added to the final score.
-            <br><br> 
-        </p>
-        <div class="imagecontainer">
-            <img class="openableimage" src="..\images\SpectralizationHome.png">
-            <img class="openableimage" src="..\images\spectra.gif">
+<body id="body">
+    <div id="glowcontainer">
+        <div id="spectralizationdialog" class="projectdialogcontent">
+            <div class="projectdialogtitlecontainer">
+                <h2>Spectralization</h2>
+                <a href="https://github.com/Brooke-8/Spectralization" target="_blank" rel="noopener noreferrer" aria-label="Github Profile">
+                    <svg width="30"height="30"><use href="../images/sprites.svg#githubsvg"></use></svg>
+                </a>
+            </div>
+            <skills-element skills='C#,Unity,NAudio'></skills-element>
+            <p>Spectralization is a small game I created in Unity to test the 
+                concept of controlling in game elements directly with audio from the desktop. It works by retrieving audio from a microphone input using
+                NAudio libraries, then taking the spectrum data and using it to perform mathematical operations on the game elements. 
+                <br><br>
+                The goal of the game is to time your inputs to when the main visualizer spectrum is at its highest point. 
+                There are 4 regions on the spectrum, each assigned to a key on the keyboard. When you press a key that region will be 
+                highlighted and a score will be calculated based on how much of that regions spectrum was active during the press, this is then added to the final score.
+                <br><br> 
+            </p>
+            <div class="imagecontainer dialogimagecontainer">
+                <img class="openableimage" src="..\images\SpectralizationHome.png">
+                <img class="openableimage" src="..\images\spectra.gif">
+            </div>
         </div>
     </div>
+    <dialog id="photodialog">
+        <img id="photodialogimage">
+    </dialog>
     <script src="../scripts/elements.js" defer></script>
+    <script src="../scripts/dialog.js"></script>
+    <script src="../scripts/glow.js"></script>
 </body>
 </html>

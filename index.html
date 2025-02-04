@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/default.css">
     <link rel="stylesheet" href="styles/mobilestyle.css">
+    <link rel="stylesheet" href="styles/images.css">
     <!--Film Grain Texture-->
     <svg display="none">
         <filter id="grainy">
@@ -17,107 +18,107 @@
         </filter>
     </svg>
 </head>
-<body>
+<body id="body">
     <div id="glowcontainer">
-        <div id="maincontainer"> 
-            <div id="leftcontainer">
-                <h1>Brooke MacQuarrie</h1>
-                <h2>Computer Engineering student at the University of Ottawa</h2>
-                <nav>
-                    <a href="#about" class="contents">ABOUT</a>
-                    <a href="#projects" class="contents">PROJECTS</a>
-                    <a href="#pixelart" class="contents">PIXEL ART</a>
-                </nav>
-            <div id="contacticons">
-                <a href="https://www.linkedin.com/in/brookemacquarrie/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-                    <svg width="40"height="40"><use href="images/sprites.svg#linkedinsvg"></use></svg></a>
-            <a href="https://github.com/Brooke-8" target="_blank" rel="noopener noreferrer" aria-label="Github Profile">
-                <svg width="40"height="40"><use href="images/sprites.svg#githubsvg"></use></svg></a>
-            </div>
-            </div>
-            <div id="rightcontainer">
-                <h2 class="listheader" id="about">About</h2>
-                <p>Hi, I'm Brooke!  
-                    <br><br>  
-                    I am an undergraduate student pursuing a bachelor's degree in Computer Engineering at the University of Ottawa. 
-                    I have a huge interest in software and computer design and love creating things that I can use in my day-to-day life. 
-                    It is important to me that all my projects are accessible so that others can build on and enjoy my work. To this end, 
-                    I strive to write detailed documentation alongside each of my projects, but if you run into any difficulties, 
-                    feel free to reach out to me using the contact links to the left.  
-                    <br><br>  
-                    Outside of programming, I currently work as a lifeguard and swim instructor. Swimming and aquatics are very close to my heart, 
-                    as I was a competitive swimmer for 10 years. I also dabble in various forms of digital art, including painting and 3D modeling. 
-                    One of my favorite mediums to work in is pixel art as it allows me to focus on color and composition!  
-                    <br><br>  
-                    On this website, you can find a collection of all my projects, as well as some hobbies I'm proud of, such as my pixel art &lt;3  
-                </p>
-                <h2 class="listheader" id="projects">Projects</h2>
-                <project-element 
-                    title="Chameleon" 
-                    description="Website that generates aesthetically pleasing from images using generative AI. My team and I created
-                    the website in 48 hours using Gadget web development tools during the uOttaHack 7 Hackathon." 
-                    skills='"React,Gadget,OpenAI Vision API,JavaScript,CSS,HTML"'
-                    url="pages/chameleondialog.html">
-                </project-element>
-                <project-element
-                    title="EAMS (Event Attendance Management System)"
-                    description="Android Mobile app that allows creation and management of events."
-                    skills='"Java,XML,Firestore,CircleCI,JUnit,Espresso,Android Studio"'
-                    url="pages/eamsdialog.html">
-                </project-element>
-                <project-element
-                    title="8-Bit Digital Computer"
-                    description="8-bit computer with 20 CPU instructions and 256 bytes of RAM. Architecture designed in Quartus II and 
-                    loaded onto an Altera UP-1 Board."
-                    skills='"Quartus II,Altera UP-1 Board,Assembly"'
-                    url="pages/eightbitdialog.html">
-                </project-element>
-                <project-element 
-                    title="Spectralization" 
-                    description="Prototype rhythm game that takes audio directly from desktop. 
-                    Has a visualizer that reacts to audio from given input device 
-                    and audio data used for game logic. " 
-                    skills='"C#,Unity,NAudio"'
-                    url="pages\spectralizationdialog.html">
-                </project-element>
-                <project-element
-                    title="Swimming Workout Generator"
-                    description="Application that automatically generates workouts for competitive swimmers. Created in Java and 
-                    used the OpenPDF library to compile and print the workouts to PDFs."
-                    skills='"Java,OpenPDF"'
-                    url="pages/workoutdialog.html">
-                </project-element>
-                <project-element
-                    title="Spreadsheet Calendar"
-                    description="Calendar template made for Google sheets."
-                    skills='"JavaScript,Google Sheets,Google Apps Script"'
-                    url="pages/spreadsheetcalendardialog.html">
-                </project-element>
-                <h2 class="listheader" id="pixelart">Pixel Art</h2>
-                <div class="imagecontainer" id="pixelimagecontainer">
-                    <img class="pixelimage openableimage" src="images\monumentBIG.png">
-                    <img class="pixelimage openableimage" src="images\InfinityFlippedOnItsSide2.png">
-                    <img class="pixelimage openableimage" src="images\Magic Mirror.gif">
-                    <img class="pixelimage openableimage" src="images\Furina.png">
-                    <img class="pixelimage openableimage" src="images\WhalePotionBIG.png">
-                    <img class="pixelimage openableimage" src="images\CANShieldBIG.png">
-                    <img class="pixelimage openableimage" src="images\Empty.png">
-                    <img class="pixelimage openableimage" src="images\Fall.gif">
-                    <img class="pixelimage openableimage" src="images\FreeBIG2.png">
-                    <img class="pixelimage openableimage" src="images\FrogBIG.png">
-                    <img class="pixelimage openableimage" src="images\ManandtheEcho.png">
-                    <img class="pixelimage openableimage" src="images\mushroomvillageBIG.png">
-                    <img class="pixelimage openableimage" src="images\OceanTower.png">
-                    <img class="pixelimage openableimage" src="images\OnCloudsBIG.png">
-                    <img class="pixelimage openableimage" src="images\RedHouseBIG.png">
-                    <img class="pixelimage openableimage" src="images\Zuko.png">
-                </div>
-                <footer>This website was coded from entirely scratch with <b>HTML</b>, <b>CSS</b>, and <b>Javascript</b> in <b>Visual Studio Code</b>.
-                    <br>
-                    Last Updated: <b><label id="dateupdated">date</label></b>.
-                </footer>
-            </div>
+    <div id="maincontainer"> 
+        <div id="leftcontainer">
+            <h1>Brooke MacQuarrie</h1>
+            <h2>Computer Engineering student at the University of Ottawa</h2>
+            <nav>
+                <a href="#about" class="contents">ABOUT</a>
+                <a href="#projects" class="contents">PROJECTS</a>
+                <a href="#pixelart" class="contents">PIXEL ART</a>
+            </nav>
+        <div id="contacticons">
+            <a href="https://www.linkedin.com/in/brookemacquarrie/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <svg width="40"height="40"><use href="images/sprites.svg#linkedinsvg"></use></svg></a>
+        <a href="https://github.com/Brooke-8" target="_blank" rel="noopener noreferrer" aria-label="Github Profile">
+            <svg width="40"height="40"><use href="images/sprites.svg#githubsvg"></use></svg></a>
         </div>
+        </div>
+        <div id="rightcontainer">
+            <h2 class="listheader" id="about">About</h2>
+            <p>Hi, I'm Brooke!  
+                <br><br>  
+                I am an undergraduate student pursuing a bachelor's degree in Computer Engineering at the University of Ottawa. 
+                I have a huge interest in software and computer design and love creating things that I can use in my day-to-day life. 
+                It is important to me that all my projects are accessible so that others can build on and enjoy my work. To this end, 
+                I strive to write detailed documentation alongside each of my projects, but if you run into any difficulties, 
+                feel free to reach out to me using the contact links to the left.  
+                <br><br>  
+                Outside of programming, I currently work as a lifeguard and swim instructor. Swimming and aquatics are very close to my heart, 
+                as I was a competitive swimmer for 10 years. I also dabble in various forms of digital art, including painting and 3D modeling. 
+                One of my favorite mediums to work in is pixel art as it allows me to focus on color and composition!  
+                <br><br>  
+                On this website, you can find a collection of all my projects, as well as some hobbies I'm proud of, such as my pixel art &lt;3  
+            </p>
+            <h2 class="listheader" id="projects">Projects</h2>
+            <project-element 
+                title="Chameleon" 
+                description="Website that generates aesthetically pleasing from images using generative AI. My team and I created
+                the website in 48 hours using Gadget web development tools during the uOttaHack 7 Hackathon." 
+                skills='"React,Gadget,OpenAI Vision API,JavaScript,CSS,HTML"'
+                url="pages/chameleondialog.html">
+            </project-element>
+            <project-element
+                title="EAMS (Event Attendance Management System)"
+                description="Android Mobile app that allows creation and management of events."
+                skills='"Java,XML,Firestore,CircleCI,JUnit,Espresso,Android Studio"'
+                url="pages/eamsdialog.html">
+            </project-element>
+            <project-element
+                title="8-Bit Digital Computer"
+                description="8-bit computer with 20 CPU instructions and 256 bytes of RAM. Architecture designed in Quartus II and 
+                loaded onto an Altera UP-1 Board."
+                skills='"Quartus II,Altera UP-1 Board,Assembly"'
+                url="pages/eightbitdialog.html">
+            </project-element>
+            <project-element 
+                title="Spectralization" 
+                description="Prototype rhythm game that takes audio directly from desktop. 
+                Has a visualizer that reacts to audio from given input device 
+                and audio data used for game logic. " 
+                skills='"C#,Unity,NAudio"'
+                url="pages\spectralizationdialog.html">
+            </project-element>
+            <project-element
+                title="Swimming Workout Generator"
+                description="Application that automatically generates workouts for competitive swimmers. Created in Java and 
+                used the OpenPDF library to compile and print the workouts to PDFs."
+                skills='"Java,OpenPDF"'
+                url="pages/workoutdialog.html">
+            </project-element>
+            <project-element
+                title="Spreadsheet Calendar"
+                description="Calendar template made for Google sheets."
+                skills='"JavaScript,Google Sheets,Google Apps Script"'
+                url="pages/spreadsheetcalendardialog.html">
+            </project-element>
+            <h2 class="listheader" id="pixelart">Pixel Art</h2>
+            <div class="imagecontainer" id="pixelimagecontainer">
+                <img class="pixelimage openableimage" src="images\monumentBIG.png">
+                <img class="pixelimage openableimage" src="images\InfinityFlippedOnItsSide2.png">
+                <img class="pixelimage openableimage" src="images\Magic Mirror.gif">
+                <img class="pixelimage openableimage" src="images\Furina.png">
+                <img class="pixelimage openableimage" src="images\WhalePotionBIG.png">
+                <img class="pixelimage openableimage" src="images\CANShieldBIG.png">
+                <img class="pixelimage openableimage" src="images\Empty.png">
+                <img class="pixelimage openableimage" src="images\Fall.gif">
+                <img class="pixelimage openableimage" src="images\FreeBIG2.png">
+                <img class="pixelimage openableimage" src="images\FrogBIG.png">
+                <img class="pixelimage openableimage" src="images\ManandtheEcho.png">
+                <img class="pixelimage openableimage" src="images\mushroomvillageBIG.png">
+                <img class="pixelimage openableimage" src="images\OceanTower.png">
+                <img class="pixelimage openableimage" src="images\OnCloudsBIG.png">
+                <img class="pixelimage openableimage" src="images\RedHouseBIG.png">
+                <img class="pixelimage openableimage" src="images\Zuko.png">
+            </div>
+            <footer>This website was coded from entirely scratch with <b>HTML</b>, <b>CSS</b>, and <b>Javascript</b> in <b>Visual Studio Code</b>.
+                <br>
+                Last Updated: <b><label id="dateupdated">date</label></b>.
+            </footer>
+        </div>
+    </div>
     </div>
     <dialog id="projectdialog">
         <iframe id="projectdialogpage"></iframe>

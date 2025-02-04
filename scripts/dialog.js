@@ -9,6 +9,7 @@ for (let i = 0; i < projects.length; i++){
         dialog.showModal();
     };
 }
+
 /* Image Dialog */
 const photoDialog = document.getElementById("photodialog");
 const imageForDialog = document.getElementById("photodialogimage");

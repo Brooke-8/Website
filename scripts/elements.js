@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             this.innerHTML = `<div class="skillcontainer">${skillsHTML}</div>`;
         }
     }
+    
     customElements.define('skills-element',Skills);
     customElements.define('project-element',Project);
 })
