@@ -44,6 +44,7 @@
     bottom: 0;
     z-index: 0;
     filter: url(#grainy);
+    transform: translateZ(0);
     pointer-events: none;
 }
 #leftcontainer{
@@ -83,6 +84,9 @@
         padding: 10px;
         border: 4px solid transparent;
         transition: all 0.1s ease-out;
+        .projecttitle{
+            padding-top: -10px;
+        }
     }
     .project:hover{
         background-color: var(--background-colour);

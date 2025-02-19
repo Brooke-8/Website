@@ -4,7 +4,8 @@ const page = document.getElementById("projectdialogpage");
 const projects = document.querySelectorAll("project-element");
 
 for (let i = 0; i < projects.length; i++){
-    projects.item(i).onclick = function(){
+    projects.item(i).addEventListener("click",showDialog);
+    function showDialog(){
         page.src = projects.item(i).url;
         dialog.showModal();
     };
@@ -22,7 +23,9 @@ for (let i = 0; i < images.length; i++){
     }
 }
 
-window.onclick = function(event){
+window.addEventListener("click",closeDialog);
+
+function closeDialog(event){
     if (event.target == dialog){
         dialog.close();
         page.src = "";
