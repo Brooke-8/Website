@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('../MainFont.ttf');
+@font-face{
+    font-family: "MainFont";
+    src: url('../MainFont.ttf');
+}
+@font-face{
+    font-family: "GrapeSoda";
+    src: url('../GrapeSoda.ttf');
+}
+@property --background-colour{
+    syntax: '<color>';
+    inherits:false;
+    initial-value: #02122b;
+}
+@property --glow{
+    syntax: '<color>';
+    inherits:false;
+    initial-value: rgba(177, 75, 197, 0.521);
+}
+@property --glow-middle{
+    syntax: '<color>';
+    inherits:false;
+    initial-value: rgba(69, 26, 226, 0.212);
+}
+@property --accent{
+    syntax: '<color>';
+    inherits:false;
+    initial-value: rgba(40, 219, 181, 0.575);
+}
+@property --white{
+    syntax: '<color>';
+    inherits:false;
+    initial-value: #F3FCF0; 
+}
+@property --subwhite{
+    syntax: '<color>';
+    inherits:false;
+    initial-value: #90a5d3; 
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -29,39 +71,39 @@ iframe{
 }
 h1 {
     color:var(--white);
-    font-family: "Righteous";
-    font-size: 3rem;
+    font-family: "GrapeSoda";
+    font-size: 6rem;
     text-align: left;
     margin: 0px
 }
 h2{
-    font-family: "K2D";
+    font-family: "MainFont";
     color:var(--white);
-    font-size: 1.5rem;
+    font-size: 3.2rem;
     font-weight: 200;
     margin: 0px;
     text-align: left;
 }
 h3{
-    font-family: "K2D";
+    font-family: "MainFont";
     color:var(--white);
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 200;
     margin: 0px;
     text-align: left; 
 }
 p{
     color:var(--subwhite);
-    font-family: "k2d";
-    font-size: 1rem;
+    font-family: "MainFont";
+    font-size: 2.2rem;
     margin: 0px;
     
 }
 a{
-    font-family: "K2D";
+    font-family: "MainFont";
     color:var(--subwhite);
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 2.2rem;
+    font-weight: 200;
     margin: 0px;
     text-align: left; 
     text-decoration: none;
@@ -87,13 +129,12 @@ svg{
     fill: var(--white);
 }
 footer{
-    font-family: "K2D";
+    font-family: "MainFont";
     color:var(--subwhite);
-    font-size: 0.8rem;
+    font-size: 1.4rem;
     margin-top: 30px;
 }
 dialog{
-    border-radius: 10px;
     border: 2px solid var(--accent);
     background-color: var(--background-colour);
     outline: none;

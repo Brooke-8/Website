@@ -5,12 +5,26 @@
     }
     #leftcontainer{
         position: static;
+        max-width: 1000px;
+        margin-right: 0px;
+
+        #titlecard{
+            padding-bottom: 50px;
+            width: 100%;
+            padding-right: 0px;
+        }
+        #leftcontainerindent{
+            display: flex;
+            flex-direction: column;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
     }
     #rightcontainer{
         max-width: 1000px;
     }
     html{
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 

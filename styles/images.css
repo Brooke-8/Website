@@ -19,14 +19,12 @@ img{
 }
 .openableimage{
     padding: 4px;
-    border: 2px solid transparent;
-    border-radius: 10px;
+    border: 4px solid transparent;
     filter: brightness(0.9);
     transition: all 0.1s ease-out;
 }
 .openableimage:hover{
-    border: 2px solid var(--accent);
-    border-radius: 10px;
+    border: 4px solid var(--accent);
     box-shadow: 0 0 20px var(--accent);
     filter: brightness(1.1);
     transition: all 0.1s ease-in;
@@ -37,7 +35,6 @@ img{
     padding: 5px;
     #photodialogimage{
         max-height: 75vh;
-        border-radius: 5px;
     }
 }
 #photodialog[open]{
