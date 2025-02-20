@@ -42,6 +42,7 @@
 
 html{
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
 }
 body {
     background-color: var(--background-colour);
@@ -135,7 +136,7 @@ footer{
     margin-top: 30px;
 }
 dialog{
-    border: 2px solid var(--accent);
+    border: 4px solid var(--accent);
     background-color: var(--background-colour);
     outline: none;
     box-shadow: 0 0 50px var(--accent);

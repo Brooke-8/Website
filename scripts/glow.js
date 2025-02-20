@@ -4,25 +4,20 @@ let mouseX = 0, mouseY = 0;
 let animationRequest = null;
 
 function updateGlow(){
+    if (mouseY+500 < parseInt(window.getComputedStyle(glowcontainer).height)){
+        glowcontainer.style.setProperty("--y", mouseY);
+    }
     glowcontainer.style.setProperty("--x", mouseX);
-    glowcontainer.style.setProperty("--y", mouseY);
     animationRequest = null;
 }
 
-function onMoveOrScroll(e){
+function onMove(e){
     if (e.type === "mousemove"){
         mouseX = e.clientX + window.scrollX;
-        mouseY = Math.min(e.clientY + window.scrollY, glowcontainer.scrollHeight);
-    }
-    if (e.type === "scroll"){
-        console.log(glowcontainer.scrollHeight)
-        if (window.scrollY >glowcontainer.scrollHeight){
-            window.scrollTo(0,glowcontainer.scrollHeight)
-        }
+        mouseY = e.clientY + window.scrollY;
     }
     if (!animationRequest){
         animationRequest = requestAnimationFrame(updateGlow);
     }
 }
-document.addEventListener("mousemove",onMoveOrScroll);
-window.addEventListener("scroll", onMoveOrScroll);
+document.addEventListener("mousemove",onMove);
