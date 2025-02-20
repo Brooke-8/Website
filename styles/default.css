@@ -41,7 +41,6 @@ html{
 body {
     background-color: var(--background-colour);
     overflow-x: hidden;
-    margin: 0;
     
 }
 
@@ -52,6 +51,7 @@ body::-webkit-scrollbar{
     width: 5px;
     height: 8px;
     background-color: var(--background-colour);
+    
 }
 .projectdialogcontent::-webkit-scrollbar-thumb,
 iframe::-webkit-scrollbar-thumb,
