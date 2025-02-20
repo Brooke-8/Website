@@ -23,9 +23,6 @@
     #rightcontainer{
         max-width: 1000px;
     }
-    html{
-        font-size: 30px;
-    }
     .linkimage{
         width: 64px;
     }
@@ -37,5 +34,8 @@
         left:-400px;
         opacity: 0.4;
 
+    }
+    html{
+        font-size: 30px;
     }
 }
