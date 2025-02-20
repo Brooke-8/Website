@@ -37,7 +37,6 @@
 html{
     scroll-behavior: smooth;
     scrollbar-gutter: stable;
-
 }
 body {
     background-color: var(--background-colour);
@@ -67,7 +66,7 @@ iframe{
 }
 h1 {
     color:var(--white);
-    font-family: "GrapeSoda";
+    font-family: "MainFont";
     font-size: 6rem;
     text-align: left;
     margin: 0px
@@ -79,6 +78,7 @@ h2{
     font-weight: 200;
     margin: 0px;
     text-align: left;
+    line-height: 30px;
 }
 h3{
     font-family: "MainFont";

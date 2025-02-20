@@ -26,6 +26,9 @@
     html{
         font-size: 30px;
     }
+    .linkimage{
+        width: 64px;
+    }
 }
 
 @media (pointer: coarse){

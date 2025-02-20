@@ -21,13 +21,13 @@ img{
     padding: 4px;
     border: 4px solid transparent;
     filter: brightness(0.9);
-    transition: all 0.1s ease-out;
+    transition: border 0.1s ease-out;
 }
 .openableimage:hover{
     border: 4px solid var(--accent);
     box-shadow: 0 0 20px var(--accent);
     filter: brightness(1.1);
-    transition: all 0.1s ease-in;
+    transition: border 0.1s ease-in;
 }
 #photodialog{
     width: fit-content;
@@ -39,4 +39,17 @@ img{
 }
 #photodialog[open]{
     display: flex;
+}
+.linkimage{
+    padding: 3px;
+    border: 3px solid transparent;
+    filter: brightness(0.9);
+    transition: border 0.1s ease-out;
+    width: 32px;
+}
+.linkimage:hover{
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+    filter: brightness(1.1);
+    transition: border 0.1s ease-in;
 }
