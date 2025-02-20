@@ -3,10 +3,16 @@
 <head>
     <title>Brooke MacQuarrie</title>
     <link rel="shortcut icon" href="images\pixlogo.ico">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/default.css">
-    <link rel="stylesheet" href="styles/mobilestyle.css">
-    <link rel="stylesheet" href="styles/images.css">
+    <link rel="preload" href="styles/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/default.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/mobilestyle.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/images.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/default.css">
+        <link rel="stylesheet" href="styles/mobilestyle.css">
+        <link rel="stylesheet" href="styles/images.css">
+    </noscript>
     <!--Film Grain Texture-->
     <svg display="none">
         <filter id="grainy">

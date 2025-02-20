@@ -58,6 +58,7 @@
     #titlecard{
         padding-bottom: 20px;
         padding-right: 40px;
+        image-rendering: pixelated; 
     }
     #leftcontainerindent{
         display: flex;
