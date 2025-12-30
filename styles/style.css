@@ -76,9 +76,15 @@
 #rightcontainer{
     max-width: 700px;
     .listheader{
+        font-size: 4rem;
         margin-top: 20px;
+    }
+    .listheaderline{
+        margin: 0px;
         margin-bottom: 5px;
-        padding-left: 13px;
+        border: none;
+        background-color: var(--white);
+        height: 4px;
     }
     .project{ 
         margin-bottom: 10px; 
@@ -86,7 +92,7 @@
         border: 4px solid transparent;
         transition: border 0.1s ease-out;
         .projecttitle{
-            padding-top: -10px;
+            font-size: 3.0rem;
         }
     }
     .project:hover{

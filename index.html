@@ -24,17 +24,21 @@
         </filter>
     </svg>
 </head>
+
+<!-- Body of the Main Page -->
 <body id="body">
     <div id="glowcontainer">
     <div id="maincontainer"> 
         <div id="leftcontainer">
             <img id="titlecard" src="images/resources/MyName.png">
             <div id="leftcontainerindent">
-            <h2>Computer Engineering student at the University of Ottawa</h2>
+            <h2>Fun art and other stuff can be found here!</h2>
             <nav>
                 <a href="#about" class="contents">ABOUT</a>
-                <a href="#projects" class="contents">PROJECTS</a>
                 <a href="#pixelart" class="contents">PIXEL ART</a>
+                <a href="#personalprojects" class="contents">PERSONAL PROJECTS</a>
+                <a href="#games" class="contents">GAME DEV</a>
+                <a href="#schoolprojects" class="contents">SCHOOL PROJECTS</a>
             </nav>
         <div id="contacticons">
             <a href="https://www.linkedin.com/in/brookemacquarrie/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
@@ -45,22 +49,71 @@
         </div>
         </div>
         <div id="rightcontainer">
+
+            <!-- ABOUT -->
             <h2 class="listheader" id="about">ABOUT</h2>
+            <hr class="listheaderline"></hr>
             <p style="padding-left: 13px;">Hi, I'm Brooke!  
-                <br><br>  
-                I am an undergraduate student pursuing a bachelor's degree in Computer Engineering at the University of Ottawa. 
-                I have a huge interest in software and computer design and love creating things that I can use in my day-to-day life. 
-                It is important to me that all my projects are accessible so that others can build on and enjoy my work. To this end, 
-                I strive to write detailed documentation alongside each of my projects, but if you run into any difficulties, 
-                feel free to reach out to me using the contact links to the left.  
-                <br><br>  
-                Outside of programming, I currently work as a lifeguard and swim instructor. Swimming and aquatics are very close to my heart, 
-                as I was a competitive swimmer for 10 years. I also dabble in various forms of digital art, including painting and 3D modeling. 
-                One of my favorite mediums to work in is pixel art as it allows me to focus on color and composition!  
-                <br><br>  
-                On this website, you can find a collection of all my projects, as well as some hobbies I'm proud of, such as my pixel art &lt;3  
+                <br>
+                This is a website where I can put random stuff that I am working on. It was originally supposed to be a resume website
+                but honestly that was restrictive and boring so now I'm just doing whatever I want :)
+                <br>
+                You can find some of my art and projects that I've worked on, and maybe I'll do blogs or something too.
             </p>
-            <h2 class="listheader" id="projects">PROJECTS</h2>
+
+            <!-- PIXEL ART -->
+            <h2 class="listheader" id="pixelart">PIXEL ART</h2>
+            <hr class="listheaderline"></hr>
+            <p style="padding: 0 0 20px 13px;">Here is all my pixel art!!! This is basically all of pieces I have made since I started back in 2021, including all my fun little doodles &lt;3 
+                Pixel art is entirely a hobby for me; I just think it's cool having them all in a gallery like this :&#41; <br>
+                I generally use a 100x100px or 200x200px canvas but sometimes I switch it up. I use both Krita and Aseprite for my work.<br>
+                These are mostly sorted from newest to oldest, but the script I'm using sorts by the date last modified so some might be out of order.
+            </p>
+            <div class="imagecontainer" id="pixelimagecontainer"></div>
+
+            <!-- PERSONAL PROJECTS-->
+            <h2 class="listheader" id="personalprojects">Personal Projects</h2>
+            <hr class="listheaderline"></hr>
+            <p style="padding: 0 0 20px 13px;">
+                These are all personal projects that I've worked on over the years. If you want to try to use them for yourself feel free but they 
+                are very tailored to me specifically. 
+            </p>
+            <project-element
+                title="Swimming Workout Generator"
+                description="Application that automatically generates workouts for competitive swimmers. Created in Java and 
+                used the OpenPDF library to compile and print the workouts to PDFs."
+                skills='"Java,OpenPDF"'
+                url="pages/workoutdialog.html">
+            </project-element>
+            <project-element
+                title="Spreadsheet Calendar"
+                description="Calendar template made for Google sheets."
+                skills='"JavaScript,Google Sheets,Google Apps Script"'
+                url="pages/spreadsheetcalendardialog.html">
+            </project-element>
+            
+            <!-- GAME DEV -->
+            <h2 class="listheader" id="games">Game Dev</h2>
+            <hr class="listheaderline"></hr>
+            <p style="padding: 0 0 20px 13px;">
+                A couple games I've tried making or am currently working on.
+            </p>
+            <project-element 
+                title="Spectralization" 
+                description="Prototype rhythm game that takes audio directly from desktop. 
+                Has a visualizer that reacts to audio from given input device 
+                and audio data used for game logic. " 
+                skills='"C#,Unity,NAudio"'
+                url="pages\spectralizationdialog.html">
+            </project-element>
+
+            <!-- SCHOOL PROJECTS -->
+            <h2 class="listheader" id="schoolprojects">Scary School Projects</h2>
+            <hr class="listheaderline"></hr>
+            <p style="padding: 0 0 20px 13px;">
+                Projects that I've worked on during school. This section is left over from when I was trying to make this a resume 
+                website but they are still cool so I've left them here.
+            </p>
             <project-element 
                 title="Chameleon" 
                 description="Website that generates aesthetically pleasing from images using generative AI. My team and I created
@@ -75,49 +128,25 @@
                 url="pages/eamsdialog.html">
             </project-element>
             <project-element
-                title="8-Bit Digital Computer"
-                description="8-bit computer with 20 CPU instructions and 256 bytes of RAM. Architecture designed in Quartus II and 
-                loaded onto an Altera UP-1 Board."
-                skills='"Quartus II,Altera UP-1 Board,Assembly"'
+                title="Computer Architecture Stuff"
+                description="I'm studying computer engineering at university and have done a many projects related to this as part of my school work."
+                skills='"Quartus II,FPGA,Assembly,VHDL/VERILOG"'
                 url="pages/eightbitdialog.html">
             </project-element>
-            <project-element 
-                title="Spectralization" 
-                description="Prototype rhythm game that takes audio directly from desktop. 
-                Has a visualizer that reacts to audio from given input device 
-                and audio data used for game logic. " 
-                skills='"C#,Unity,NAudio"'
-                url="pages\spectralizationdialog.html">
-            </project-element>
-            <project-element
-                title="Swimming Workout Generator"
-                description="Application that automatically generates workouts for competitive swimmers. Created in Java and 
-                used the OpenPDF library to compile and print the workouts to PDFs."
-                skills='"Java,OpenPDF"'
-                url="pages/workoutdialog.html">
-            </project-element>
-            <project-element
-                title="Spreadsheet Calendar"
-                description="Calendar template made for Google sheets."
-                skills='"JavaScript,Google Sheets,Google Apps Script"'
-                url="pages/spreadsheetcalendardialog.html">
-            </project-element>
-            <h2 class="listheader" id="pixelart">PIXEL ART</h2>
-            <p style="padding: 0 0 20px 13px;">Here is all my pixel art!!! This is basically all of pieces I have made since I started back in 2021, including all my fun little doodles &lt;3 
-                Pixel art is entirely a hobby for me; I just think it's cool having them all in a gallery like this :&#41; <br>
-                I generally use a 100x100px or 200x200px canvas but sometimes I switch it up. I use both Krita and Aseprite for my work.<br>
-                These are mostly sorted from newest to oldest, but the script I'm using sorts by the date last modified so some might be out of order.
-            </p>
-            <div class="imagecontainer" id="pixelimagecontainer"></div>
-            <footer>This website was coded from entirely scratch with HTML, CSS, and Javascript in Visual Studio Code.
-                <br>Font: <a style="font-size: 1.4rem;" href="https://github.com/aseprite/aseprite/tree/main/data/fonts" target="_blank" rel="noopener noreferrer"> <b>Aseprite</b></a>
+            
+            <!-- Footer -->
+            <footer>This website was coded entirely with raw HTML, CSS, and Javascript because <s>I hate myself</s> it was very fun!
+                <br>Website Font: <a style="font-size: 1.4rem;" href="https://github.com/aseprite/aseprite/tree/main/data/fonts" target="_blank" rel="noopener noreferrer"> <b>Aseprite</b></a>
                  by <a style="font-size: 1.4rem;" href="https://github.com/dacap" target="_blank" rel="noopener noreferrer"><b>Dacap</b></a>
+                <br>
+                <a style="font-size:1.4rem;" href="mailto:bcmacquarrie@gmail.com">Contact Me</a>
                 <br>
                 Last Updated: <a style="font-size: 1.4rem;" href="https://github.com/Brooke-8/Website" target="_blank" rel="noopener noreferrer"><b><label id="dateupdated">date</label></b></a>.
             </footer>
         </div>
     </div>
     </div>
+
     <dialog id="projectdialog">
         <iframe id="projectdialogpage"></iframe>
     </dialog>
