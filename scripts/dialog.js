@@ -14,13 +14,16 @@ for (let i = 0; i < projects.length; i++){
 /* Image Dialog */
 const photoDialog = document.getElementById("photodialog");
 const imageForDialog = document.getElementById("photodialogimage");
+const descriptionForDialog = document.getElementById("photodialogdescription");
+
+/* Creating pixel art image container */
 async function loadImages(){
     const list = await fetch('images/pixelart/pixelartimages.json');
     const images = await list.json();
     const imagecontainer = document.getElementById("pixelimagecontainer");
     let imgHTML = '';
-    images.forEach(imagePath =>{
-        imgHTML += `<img class="pixelimage openableimage" src="${imagePath}">`;
+    images.forEach(image =>{
+        imgHTML += `<img class="pixelimage openableimage" src="${image.path}" alt="${image.description}">`;
     })
     imagecontainer.innerHTML = `${imgHTML}`;
     imageListeners();
@@ -30,6 +33,7 @@ function imageListeners(){
     for (let i = 0; i < images.length; i++){
         images.item(i).onclick = function(){
             imageForDialog.src = images.item(i).src;
+            descriptionForDialog.innerText = images.item(i).alt;
             photoDialog.showModal();
         }
     }
@@ -48,6 +52,7 @@ function closeDialog(event){
     if (event.target == photoDialog){
         photoDialog.close();
         imageForDialog.src="";
+        descriptionForDialog.innerText="";
     }
 }
 
