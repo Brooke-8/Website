@@ -1,4 +1,6 @@
 [
+  { "path": "images/pixelart/Cascade.png", "description": "" },
+  { "path": "images/pixelart/Ocean.png", "description": "" },
   { "path": "images/pixelart/Eye.png", "description": "This was some practice of rendering an eye" },
   { "path": "images/pixelart/Zuko.png", "description": "Some fan art of Zuko from ATLA" },
   { "path": "images/pixelart/Furina.png", "description": "Some fan art of Furina from Genshin" },
